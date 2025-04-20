@@ -84,6 +84,7 @@ body {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   border-left: 4px solid #6a11cb;
@@ -111,7 +112,7 @@ body {
 }
 
 .delete-task {
-  width: 25px;
+  width: 50px;
   height: 25px;
   border-radius: 50%;
   background: #ff6b6b;
@@ -124,26 +125,60 @@ body {
   transition: all 0.3s ease;
 }
 
-.delete-task:hover {
+.delete-task:hover,.delete:hover {
   background: #ff5252;
-  transform: rotate(90deg);
+  transform: scale(1.1);
 }
+
+
+
+.delete-compelted {
+  width: 90%;
+  height: 25px;
+  border-radius: 12%;
+  background: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  padding: 0 10px;
+ 
+}
+.delete-compelted:hover {
+  background: #45a049;
+}
+
 
 /* Task Stats */
 .task-stats {
   display: flex;
   justify-content: space-between;
-  padding: 15px 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
   background: white;
   border-top: 1px solid #eee;
   border-radius: 0 0 15px 15px;
+  width: 300px;
+  box-sizing: border-box;
 }
 
 .tasks-count, .tasks-completed {
   font-weight: 600;
   color: #555;
 }
-
+.tasks
+{
+  padding: 1%;
+  width: 40%;
+}
+.completed{
+  padding: 1%;
+  width: 56%;
+}
 .tasks-count span, .tasks-completed span {
   color: #6a11cb;
   font-weight: 700;
@@ -151,6 +186,28 @@ body {
 
 .tasks-completed span {
   color: #4CAF50;
+}
+
+.delete{
+  width: 70px;
+  height: auto;
+  border-radius: 12%;
+  background: #ff6b6b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.disabled:hover {
+  transform: scale(1);
 }
 
 /* Responsive Design */
