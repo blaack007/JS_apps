@@ -190,7 +190,7 @@ body {
 
 .delete{
   width: 70px;
-  height: auto;
+  height: 25px;
   border-radius: 12%;
   background: #ff6b6b;
   color: white;
@@ -200,6 +200,7 @@ body {
   cursor: pointer;
   font-size: 14px;
   transition: all 0.3s ease;
+  padding: 0 10px;
 }
 
 .disabled {
@@ -219,4 +220,17 @@ body {
   .add-task {
     padding: 15px;
   }
+}
+
+@media (max-width: 810px) {
+  .delete-compelted {
+    font-size: 10px;
+  }
+  .delete
+  {
+    
+    font-size: 10px;
+  }
+  
+
 }
