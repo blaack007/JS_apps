@@ -71,6 +71,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                 </div>`;
             });
 
+            
             // Reveal the cards with animation
             revealCards('.card');
           })
